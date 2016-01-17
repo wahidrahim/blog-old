@@ -1,7 +1,7 @@
 var express = require('express');
 var logger = require('morgan');
-var sass = require('node-sass-middleware');
 var path = require('path');
+var sass = require('node-sass-middleware');
 
 var server = express();
 
@@ -11,13 +11,10 @@ server.set('view engine', 'jade');
 server.use(sass({
   src: path.join(__dirname, 'public', 'styles', 'scss'),
   dest: path.join(__dirname, 'public', 'styles'),
-  debug: true,
-  outputStyle: 'compressed',
   prefix: '/styles'
 }));
 server.use(logger('dev'));
 server.use(express.static(path.join(__dirname, 'public')));
-
 
 server.get('/', function(req, res) {
   res.render('index');
