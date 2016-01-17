@@ -9,7 +9,11 @@
   "author": "Wahid Rahim",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "connect-flash": "^0.1.1",
     "express": "^4.13.3",
+    "express-messages": "^1.0.0",
+    "express-session": "^1.13.0",
     "jade": "^1.11.0",
     "morgan": "^1.6.1",
     "node-sass-middleware": "^0.9.7"

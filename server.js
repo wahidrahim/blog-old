@@ -2,6 +2,8 @@ var express = require('express');
 var logger = require('morgan');
 var path = require('path');
 var sass = require('node-sass-middleware');
+var bodyParser = require('body-parser');
+var session = require('express-session');
 
 var server = express();
 
@@ -13,11 +15,20 @@ server.use(sass({
   dest: path.join(__dirname, 'public', 'styles'),
   prefix: '/styles'
 }));
+server.use(bodyParser.urlencoded({extended: false}));
 server.use(logger('dev'));
 server.use(express.static(path.join(__dirname, 'public')));
 
 server.get('/', function(req, res) {
   res.render('index');
+});
+server.post('/contact', function(req, res, next) {
+  // eberything goot?
+  // send mail?
+  console.log(req.body);
+  res.redirect('back');
+  //res.render('contacted');
+  //or notify in the same page/place
 });
 
 server.listen(server.get('port'), function() {
