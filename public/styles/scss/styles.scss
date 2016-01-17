@@ -1,0 +1,48 @@
+body {
+  /*background-color: cyan;*/
+  font-family: lato, sans-serif;
+  padding-top: 60px;
+}
+
+nav.navbar {
+  padding: 5px;
+
+  .navbar-header > a,
+  .navbar-nav > li > a {
+    color: white;
+
+    &:hover {
+      color: cyan;
+    }
+  }
+
+  .navbar-brand {
+    font-size: 3em;
+    font-weight: 900;
+  }
+}
+
+#greeter {
+  background-color: black;
+  color: white;
+
+  h1 {
+    font-weight: 900;
+  }
+}
+
+#portfolio > h1,
+#skills > h1,
+#contact > h1 {
+  font-weight: 900;
+}
+
+#footer {
+  /*font-weight: 100;*/
+  padding-top: 15px;
+  background-color: black;
+  color: lightgray;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
