@@ -1,95 +1,96 @@
 extends layout
 
 block content
-  .container
-    .row
-      .col-lg-12
-        #greeter
+  #greeter.container-fluid
+    .container
+      .row
+        .col-lg-12
           p desk photo goes here
           .text-right
             h1 Wahid Rahim
             h5 developer | blogger | entrepreneur
 
-  .container
-    .row
-      .col-lg-12
-        #portfolio
+  #portfolio.container-fluid
+    .container
+      .row
+        .col-lg-12.portfolio
           h1 Portfolio
-    .row
-      .col-sm-4
-        .project
-          p a project
-      .col-sm-4
-        .project
-          p a project
-      .col-sm-4
-        .project
-          p a project
-      .col-sm-4
-        .project
-          p a project
-      .col-sm-4
-        .project
-          p a project
-      .col-sm-4
-        .project
-          p a project
+      .row
+        .col-sm-4
+          .project
+            p a project
+        .col-sm-4
+          .project
+            p a project
+        .col-sm-4
+          .project
+            p a project
+        .col-sm-4
+          .project
+            p a project
+        .col-sm-4
+          .project
+            p a project
+        .col-sm-4
+          .project
+            p a project
 
-  .container
-    .row
-      .col-lg-12
-        #skills
+  #skills.container-fluid
+    .container
+      .row
+        .col-lg-12.skills
           h1 Skills
-    .row
-      .col-sm-2
-      .col-sm-1
-        p.text-center Javascript
-      .col-sm-3
-        .progress
-          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.js, aria-valuemax='100', style='width: #{skills.js}%')
+      .row
+        .col-sm-2
+        .col-sm-1
+          p.text-center Javascript
+        .col-sm-3
+          .progress
+            .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.js, aria-valuemax='100', style='width: #{skills.js}%')
 
-      .col-sm-1
-        p.text-center HTML
-      .col-sm-3
-        .progress
-          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.html, aria-valuemax='100', style='width: #{skills.html}%')
-      .col-sm-2
+        .col-sm-1
+          p.text-center HTML
+        .col-sm-3
+          .progress
+            .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.html, aria-valuemax='100', style='width: #{skills.html}%')
+        .col-sm-2
 
-    .row
-      .col-sm-2
-      .col-sm-1
-        p.text-center CSS
-      .col-sm-3
-        .progress
-          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.css, aria-valuemax='100', style='width: #{skills.css}%')
+      .row
+        .col-sm-2
+        .col-sm-1
+          p.text-center CSS
+        .col-sm-3
+          .progress
+            .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.css, aria-valuemax='100', style='width: #{skills.css}%')
 
-      .col-sm-1
-        p.text-center C++
-      .col-sm-3
-        .progress
-          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.cpp, aria-valuemax='100', style='width: #{skills.cpp}%')
-      .col-sm-2
+        .col-sm-1
+          p.text-center C++
+        .col-sm-3
+          .progress
+            .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.cpp, aria-valuemax='100', style='width: #{skills.cpp}%')
+        .col-sm-2
 
-    .row
-      .col-sm-2
-      .col-sm-1
-        p.text-center C
-      .col-sm-3
-        .progress
-          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.c, aria-valuemax='100', style='width: #{skills.c}%')
+      .row
+        .col-sm-2
+        .col-sm-1
+          p.text-center C
+        .col-sm-3
+          .progress
+            .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.c, aria-valuemax='100', style='width: #{skills.c}%')
 
-      .col-sm-1
-        p.text-center Ruby
-      .col-sm-3
-        .progress
-          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.ruby, aria-valuemax='100', style='width: #{skills.ruby}%')
-      .col-sm-2
+        .col-sm-1
+          p.text-center Ruby
+        .col-sm-3
+          .progress
+            .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.ruby, aria-valuemax='100', style='width: #{skills.ruby}%')
+        .col-sm-2
 
-  .container
-    .row
-      .col-lg-12
-        #contact
+
+  #contact.container-fluid
+    .container
+      .row
+        .col-lg-12.contact
           h1 Contact me
-    .row
-      .col-lg-12
-        include ./includes/contact_form.jade
+      .row
+        .col-lg-12
+          include ./includes/contact_form.jade

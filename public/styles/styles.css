@@ -1,39 +1,59 @@
 body {
-  height: 100%;
   font-family: lato, sans-serif;
-  padding-top: 60px; }
-
+  padding-top: 60px;
+}
 #wrap {
   min-height: 100%;
   height: auto;
   margin: 0 auto -60px;
-  padding: 0 0 60px; }
-
+  padding: 0 0 60px;
+}
 nav.navbar {
-  padding: 5px; }
-  nav.navbar .navbar-header > a,
-  nav.navbar .navbar-nav > li > a {
-    color: white; }
-    nav.navbar .navbar-header > a:hover,
-    nav.navbar .navbar-nav > li > a:hover {
-      color: cyan; }
-  nav.navbar .navbar-brand {
-    font-size: 3em;
-    font-weight: 900; }
-
+  padding: 5px;
+}
+nav.navbar .navbar-header > a,
+nav.navbar .navbar-nav > li > a {
+  color: #fff;
+}
+nav.navbar .navbar-header > a:hover,
+nav.navbar .navbar-nav > li > a:hover {
+  color: #0ff;
+}
+nav.navbar .navbar-brand {
+  font-size: 3em;
+  font-weight: 900;
+}
+#greeter {
+  height: 500px;
+  background-color: #000;
+}
 #greeter h1 {
-  font-weight: 900; }
-
-#portfolio > h1,
-#skills > h1,
-#contact > h1 {
-  font-weight: 900; }
-
-#footer {
-  height: 50px;
-  position: fixed;
-  padding-top: 15px;
-  background-color: black;
-  color: lightgray;
+  color: #fff;
+  font-weight: 900;
+}
+#portfolio {
+  height: 100%;
+  padding-bottom: 10px;
+}
+#skills {
+  height: 300px;
+  background-color: #eee;
+}
+.project {
   width: 100%;
-  bottom: 0; }
+  height: 300px;
+}
+.portfolio > h1,
+.skills > h1,
+.contact > h1 {
+  font-weight: 900;
+}
+#footer {
+  position: fixed;
+  height: 50px;
+  padding-top: 15px;
+  background-color: #000;
+  color: #d3d3d3;
+  width: 100%;
+  bottom: 0;
+}

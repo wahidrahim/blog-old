@@ -2,13 +2,14 @@ doctype html
 html
   head
     link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==", crossorigin="anonymous")
-    link(rel='stylesheet', href='styles/styles.css')
+    link(rel='stylesheet', href='/styles/styles.css')
+    //-link(rel='stylesheet', href='/css/styles.css')
 
     link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900', rel='stylesheet', type='text/css')
-  body
 
+  body
     #wrap
-      include ./includes/navbar.jade
+      include includes/navbar.jade
       block content
 
    #footer.text-center
@@ -16,4 +17,3 @@ html
       .row
         .col-lg-12
           p Copyright &copy; wahidrahim.com 2016 
-    //-include ./includes/footer.jade
