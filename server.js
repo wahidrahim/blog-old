@@ -20,7 +20,16 @@ server.use(logger('dev'));
 server.use(express.static(path.join(__dirname, 'public')));
 
 server.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', {
+    skills: {
+      js: 80,
+      html: 100,
+      css: 90,
+      cpp :70,
+      c: 65,
+      ruby: 68
+    }
+  });
 });
 server.post('/contact', function(req, res, next) {
   // eberything goot?

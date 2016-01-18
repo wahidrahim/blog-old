@@ -41,32 +41,49 @@ block content
         #skills
           h1 Skills
     .row
+      .col-sm-2
+      .col-sm-1
+        p.text-center Javascript
       .col-sm-3
-        p Javascript
+        .progress
+          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.js, aria-valuemax='100', style='width: #{skills.js}%')
+
+      .col-sm-1
+        p.text-center HTML
       .col-sm-3
-        p 4/5
-      .col-sm-3
-        p C++
-      .col-sm-3
-        p 3/5
+        .progress
+          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.html, aria-valuemax='100', style='width: #{skills.html}%')
+      .col-sm-2
+
     .row
+      .col-sm-2
+      .col-sm-1
+        p.text-center CSS
       .col-sm-3
-        p HTML
+        .progress
+          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.css, aria-valuemax='100', style='width: #{skills.css}%')
+
+      .col-sm-1
+        p.text-center C++
       .col-sm-3
-        p 5/5
-      .col-sm-3
-        p C
-      .col-sm-3
-        p 3/5
+        .progress
+          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.cpp, aria-valuemax='100', style='width: #{skills.cpp}%')
+      .col-sm-2
+
     .row
+      .col-sm-2
+      .col-sm-1
+        p.text-center C
       .col-sm-3
-        p CSS
+        .progress
+          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.c, aria-valuemax='100', style='width: #{skills.c}%')
+
+      .col-sm-1
+        p.text-center Ruby
       .col-sm-3
-        p 5/5
-      .col-sm-3
-        p Ruby
-      .col-sm-3
-        p 3/5
+        .progress
+          .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=skills.ruby, aria-valuemax='100', style='width: #{skills.ruby}%')
+      .col-sm-2
 
   .container
     .row
