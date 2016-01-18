@@ -1,6 +1,13 @@
 body {
+  height: 100%;
   font-family: lato, sans-serif;
   padding-top: 60px; }
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px; }
 
 nav.navbar {
   padding: 5px; }
@@ -23,9 +30,10 @@ nav.navbar {
   font-weight: 900; }
 
 #footer {
+  height: 50px;
+  position: fixed;
   padding-top: 15px;
   background-color: black;
   color: lightgray;
-  position: absolute;
   width: 100%;
   bottom: 0; }
