@@ -31,23 +31,21 @@ nav.navbar .navbar-brand {
   color: #fff;
   font-weight: 900;
 }
-#portfolio {
+#projects {
   height: 100%;
-  padding-bottom: 10px;
-}
-#skills {
-  height: 300px;
-  background-color: #eee;
-}
-.projects {
-  margin-bottom: 15px;
+  padding-bottom: 20px;
 }
 .project {
   background-color: #f0f;
 }
-.portfolio > h1,
-.skills > h1,
-.contact > h1 {
+#skills {
+  height: 100%;
+  background-color: #eee;
+  padding-bottom: 10px;
+}
+h1.projects,
+h1.skills,
+h1.contact {
   font-weight: 900;
 }
 #footer {
