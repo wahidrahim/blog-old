@@ -31,19 +31,38 @@ nav.navbar .navbar-brand {
   color: #fff;
   font-weight: 900;
 }
-#projects {
-  height: 100%;
-  padding-bottom: 20px;
+.portfolio {
+  display: block;
+  overflow: auto;
+  margin-bottom: 20px;
 }
 .project {
-  background-color: #f0f;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.project h3 {
+  font-weight: bold;
+}
+.project a {
+  font-size: 1.2em;
+}
+#candy-crash img {
+  width: 360px;
+}
+#breakout-js video {
+  width: 360px;
 }
 #skills {
   height: 100%;
   background-color: #eee;
   padding-bottom: 10px;
 }
-h1.projects,
+#portfolio h1,
+#skills h1,
+#contact h1 {
+  font-weight: 900;
+}
+h1.portfolio,
 h1.skills,
 h1.contact {
   font-weight: 900;
