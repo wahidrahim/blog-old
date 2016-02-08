@@ -34,7 +34,9 @@ server.get('/', function(req, res) {
       css: 90,
       cpp :70,
       c: 65,
-      ruby: 68
+      ruby: 68,
+      java: 70,
+      csharp: 50
     }
   });
 });

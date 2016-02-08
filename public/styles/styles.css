@@ -107,3 +107,13 @@ h1.contact {
   background-color: #000;
   color: #d3d3d3;
 }
+#skills {
+  background: #ddd;
+}
+.progress {
+  background-color: #333;
+}
+.progress .progress-bar {
+  background-color: #0ff;
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.25), rgba(0,0,0,0.25)), -webkit-linear-gradient(left, #0ff, #09f);
+}
