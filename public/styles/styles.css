@@ -18,27 +18,51 @@ nav.navbar .navbar-brand {
   font-weight: 900;
 }
 #greeter {
+  background-image: url("../images/mtns.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 500px;
   background-color: #000;
+  color: #fff;
 }
 #greeter h1 {
-  color: #fff;
   font-weight: 900;
+}
+#greeter #title {
+  position: absolute;
+  right: 0px;
+  bottom: -420px;
+}
+#portfolio {
+  background-color: #363434;
+  min-height: 100% !important;
+}
+#portfolio h1 {
+  color: #fff;
 }
 .portfolio {
   display: block;
-  overflow: auto;
+  overflow: visible;
   margin-bottom: 20px;
+  min-height: 420px !important;
 }
 .project {
-  border: 1px solid #000;
+  border: 1px solid #dadada;
   padding: 10px;
+  background-color: #fff;
+}
+.project * {
+  margin: 0;
+  padding: 0;
 }
 .project h3 {
   font-weight: bold;
 }
 .project a {
   font-size: 1.2em;
+}
+#blackboard {
+  width: 350px;
 }
 #candy-crash img {
   width: 360px;
@@ -60,6 +84,10 @@ h1.portfolio,
 h1.skills,
 h1.contact {
   font-weight: 900;
+}
+#contact-form {
+  margin: 0 auto;
+  width: 720px;
 }
 #wrap {
   min-height: 100%;
