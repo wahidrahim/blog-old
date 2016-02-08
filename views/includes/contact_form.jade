@@ -1,10 +1,10 @@
-form#contactForm(action='contact', name='contactme', method='post')
+form#contact-form(action='contact' method='post')
   fieldset
   .form-group
-    input#nameInput.form-control(name='name', placeholder='Name')
+    input#name.form-control(name='name', placeholder='Name')
   .form-group
-    input#emailInput.form-control(name='email', placeholder='Email')
+    input#email.form-control(name='email', placeholder='Email')
   .form-group
-    textarea#messageInput.form-control(name='message', placeholder='Message', rows=5)
+    textarea#message.form-control(name='message', placeholder='Message', rows=5)
   .form-group
     button.btn.btn-lg(type='submit') Send
