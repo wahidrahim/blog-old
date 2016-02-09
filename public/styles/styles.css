@@ -21,9 +21,11 @@ nav.navbar .navbar-brand {
   background-image: url("../images/mtns.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
   background-color: #000;
   color: #fff;
+  position: fixed;
+  height: 500px;
+  width: 100%;
 }
 #greeter h1 {
   font-weight: 900;
@@ -33,12 +35,19 @@ nav.navbar .navbar-brand {
   right: 0px;
   bottom: -420px;
 }
+#portfolio,
+#skills,
+#contact {
+  position: relative;
+  top: 500px;
+}
 #portfolio {
   background-color: #363434;
   min-height: 100% !important;
 }
 #portfolio h1 {
   color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
 }
 .portfolio {
   display: block;
@@ -52,6 +61,7 @@ nav.navbar .navbar-brand {
   clear: both;
 }
 .project {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border: 1px solid #dadada;
   padding: 10px;
   background-color: #fff;
@@ -82,6 +92,7 @@ nav.navbar .navbar-brand {
 #skills h1,
 #contact h1 {
   font-weight: 900;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
 }
 h1.portfolio,
 h1.skills,
@@ -116,4 +127,14 @@ h1.contact {
 .progress .progress-bar {
   background-color: #0ff;
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.25), rgba(0,0,0,0.25)), -webkit-linear-gradient(left, #0ff, #09f);
+}
+#title {
+  position: absolute;
+  top: -200px;
+  right: 20px;
+}
+#title h1,
+#title h5 {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+  color: #fafafa;
 }
