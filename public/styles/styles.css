@@ -56,6 +56,10 @@ nav.navbar .navbar-brand {
   padding: 10px;
   background-color: #fff;
 }
+.project img,
+.project video {
+  max-width: 350px;
+}
 .project * {
   margin: 0;
   padding: 0;
@@ -69,9 +73,7 @@ nav.navbar .navbar-brand {
 .project a {
   font-size: 1.2em;
 }
-#blackboard {
-  width: 350px;
-}
+#blackboard img,
 #candy-crash img {
   width: 360px;
 }
