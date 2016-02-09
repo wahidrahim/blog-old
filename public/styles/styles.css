@@ -73,13 +73,6 @@ nav.navbar .navbar-brand {
 .project a {
   font-size: 1.2em;
 }
-#blackboard img,
-#candy-crash img {
-  width: 360px;
-}
-#breakout-js video {
-  width: 360px;
-}
 #skills {
   height: 100%;
   background-color: #eee;
