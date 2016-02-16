@@ -1,0 +1,23 @@
+{
+  "name": "v2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Wahid Rahim <wahidrahim@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wahidrahim/wahidrahim.com",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "masonry": "^4.0.0",
+    "imagesloaded": "^4.1.0"
+  }
+}

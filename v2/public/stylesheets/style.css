@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+
+body {
+  font-family: Lato;
+}
+
+.navbar-static-top {
+  margin-bottom: 0px;
+  background-color: #000;
+}
+.navbar-header > a img {
+  border-radius: 5px;
+}
+
+.banner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.banner-text-container {
+  position: relative;
+  height: 550px;
+}
+.banner-text {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  bottom: 200px;
+}
+.banner-text h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.portfolio {
+  color: #fff;
+  background-color: #222;
+  height: 500px;
+  overflow: hidden;
+  height: 1%;
+}
+#portfolio {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#portfolio .item {
+  width: 360px;
+  margin-bottom: 30px;
+  background-color: #eee;
+  color: #000;
+  padding: 10px;
+}
+#portfolio .item #stack {
+  color: #666;
+}
+
+#skills {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact {
+  background-color: #32bad5;
+  color: #fff;;
+}
+.contact h3 {
+  font-weight: bold;
+}
+#contact-form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.progress{
+  box-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+.progress .progress-bar {
+  background-color: #32bad5;
+}
+
+footer {
+  /*color: #ddd;*/
+  /*background-color: transparent;*/
+}

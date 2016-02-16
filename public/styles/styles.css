@@ -24,8 +24,8 @@ nav.navbar .navbar-brand {
   background-color: #000;
   color: #fff;
   position: fixed;
-  height: 500px;
   width: 100%;
+  padding-top: 30%;
 }
 #greeter h1 {
   font-weight: 900;
@@ -39,7 +39,7 @@ nav.navbar .navbar-brand {
 #skills,
 #contact {
   position: relative;
-  top: 500px;
+  margin-top: 30%;
 }
 #portfolio {
   background-color: #363434;
