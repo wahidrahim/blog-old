@@ -147,13 +147,16 @@ block content
             br
         .row
           .col-xs-12
-            form#contact-form(action='contact' method='post')
+            form#contact-form(role='form', data-toggle='validator', data-disable='false')
               fieldset
               .form-group
-                input#name.form-control(name='name', placeholder='Name')
+                input#name.form-control(placeholder='Name', required)
+                .help-block.with-errors
               .form-group
-                input#email.form-control(name='email', placeholder='Email')
+                input#email.form-control(type='email', placeholder='Email', data-error='invalid email', required)
+                .help-block.with-errors
               .form-group
-                textarea#message.form-control(name='message', placeholder='Message', rows=5)
+                textarea#message.form-control(placeholder='Message', rows=5, required)
+                .help-block.with-errors
               .form-group
-                button.btn.btn-primary.btn-block(type='submit') Send
+                button#submit.btn.btn-primary.btn-block(type='submit') Send
