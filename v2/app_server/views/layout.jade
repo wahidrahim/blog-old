@@ -10,7 +10,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     // navbar
-    nav.navbar.navbar-inverse.navbar-static-top
+    nav.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-main', aria-expanded='false')
@@ -36,7 +36,9 @@ html
     footer
       .container
         .row
-          .col-xs-12.text-right
+          .col-xs-3.tex-left
+            small powered by #[img(src='/images/nodejs.png')]
+          .col-xs-9.text-right
             small &copy; Wahid Rahim 2016
 
     script(src='/bower_components/jquery/dist/jquery.min.js')

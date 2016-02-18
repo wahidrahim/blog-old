@@ -10,150 +10,150 @@ block content
               h1 Wahid Rahim
               p developer | blogger | entrepreneur
 
-  .portfolio.container-fluid
-    .row
+  #wrapper
+    .portfolio.container-fluid
+      .row
+        .container
+          .row
+            .col-xs-12
+              #portfolio
+                // BLACKBOARD
+                .item
+                  img.img-responsive(src='https://giant.gfycat.com/TerribleOptimalBlackbuck.gif')
+                  a(href='http://wahidrahim.com:3000/demo/blackboard', target='_blank')
+                    h3 Blackboard
+                  #stack
+                    i Node.js, Express.js, Socket.io, Fabric.js, CoffeeScript
+                  #desc
+                    | Real-time multi-user drawing application. Made simply, thanks to Socket.io and Fabric.js.
+                  a(href='https://github.com/wahidrahim/blackboard' target='_blank')
+                    | https://github.com/wahidrahim/blackboard
+
+                // MEAN-TODO-APP
+                .item
+                  img.img-responsive(src='http://i.imgur.com/uHPveze.jpg')
+                  h3 mean-todo-app
+                  #stack
+                    i MongoDB, Express.js, Angular.js, Node.js
+                  #desc
+                    | The 'Hello World' of CRUD apps.
+                  a(href='https://github.com/wahidrahim/mean-todo-app')
+                    | https://github.com/wahidrahim/mean-todo-app
+
+                // BREAKOUT-JS
+                .item
+                  img.img-responsive(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.gif')
+                  a(href='https://goo.gl/Ef3CsR')
+                    h3 breakout-js
+                  #stack
+                    i JavaScript, HTML, CSS
+                  #desc
+                    | The classic game in pure Object Oriented JavaScript.
+                  a(href='https://github.com/wahidrahim/Breakout-JS')
+                    | https://github.com/wahidrahim/Breakout-JS
+
+                // CANDY-CRASH
+                .item
+                  img.img-responsive(src='http://i.imgur.com/ry1sXHy.gif')
+                  h3 Candy-Crash
+                  #stack
+                    i C++, Bash, X-graphics
+                  #desc
+                    | A match-3 type of game, written in C++, in collaboration with Larry Li.
+                  a(href='https://github.com/wahidrahim/Candy-Crash')
+                    | https://github.com/wahidrahim/Candy-Crash
+
+                // RESIZE-FONT
+                .item
+                  img.img-responsive(src='http://i.imgur.com/qsDPtsj.gif')
+                  h3 resize-font.vim
+                  #stack
+                    i VimL
+                  #desc
+                    | A tiny script for making fonts bigger/smaller in gVim.
+                  a(href='https://github.com/wahidrahim/resize-font.vim')
+                    | https://github.com/wahidrahim/resize-font.vim
+
+    .skills.container-fluid
       .container
         .row
           .col-xs-12
-            #portfolio
-              // BLACKBOARD
-              .item
-                img.img-responsive(src='https://giant.gfycat.com/TerribleOptimalBlackbuck.gif')
-                a(href='http://wahidrahim.com:3000/demo/blackboard', target='_blank')
-                  h3 Blackboard
-                #stack
-                  i Node.js, Express.js, Socket.io, Fabric.js, CoffeeScript
-                #desc
-                  | Real-time multi-user drawing application. Made simply, thanks to Socket.io and Fabric.js.
-                a(href='https://github.com/wahidrahim/blackboard' target='_blank')
-                  | https://github.com/wahidrahim/blackboard
+            #skills
+              .row
+                .col-sm-2
+                .col-sm-1
+                  p.text-center Javascript
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=80, aria-valuemax='100', style='width: 80%')
 
-              // MEAN-TODO-APP
-              .item
-                img.img-responsive(src='http://i.imgur.com/uHPveze.jpg')
-                h3 mean-todo-app
-                #stack
-                  i MongoDB, Express.js, Angular.js, Node.js
-                #desc
-                  | The 'Hello World' of CRUD apps.
-                a(href='https://github.com/wahidrahim/mean-todo-app')
-                  | https://github.com/wahidrahim/mean-todo-app
+                .col-sm-1
+                  p.text-center HTML
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=100, aria-valuemax='100', style='width: 100%')
+                .col-sm-2
 
-              // BREAKOUT-JS
-              .item
-                img.img-responsive(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.gif')
-                a(href='https://goo.gl/Ef3CsR')
-                  h3 breakout-js
-                #stack
-                  i JavaScript, HTML, CSS
-                #desc
-                  | The classic game in pure Object Oriented JavaScript.
-                a(href='https://github.com/wahidrahim/Breakout-JS')
-                  | https://github.com/wahidrahim/Breakout-JS
+              .row
+                .col-sm-2
+                .col-sm-1
+                  p.text-center CSS
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=80, aria-valuemax='100', style='width: 85%')
 
-              // CANDY-CRASH
-              .item
-                img.img-responsive(src='http://i.imgur.com/ry1sXHy.gif')
-                h3 Candy-Crash
-                #stack
-                  i C++, Bash, X-graphics
-                #desc
-                  | A match-3 type of game, written in C++, in collaboration with Larry Li.
-                a(href='https://github.com/wahidrahim/Candy-Crash')
-                  | https://github.com/wahidrahim/Candy-Crash
+                .col-sm-1
+                  p.text-center C++
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=60, aria-valuemax='100', style='width: 65%')
+                .col-sm-2
 
-              // RESIZE-FONT
-              .item
-                img.img-responsive(src='http://i.imgur.com/qsDPtsj.gif')
-                h3 resize-font.vim
-                #stack
-                  i VimL
-                #desc
-                  | A tiny script for making fonts bigger/smaller in gVim.
-                a(href='https://github.com/wahidrahim/resize-font.vim')
-                  | https://github.com/wahidrahim/resize-font.vim
+              .row
+                .col-sm-2
+                .col-sm-1
+                  p.text-center Java
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=65, aria-valuemax='100', style='width: 70%')
 
-  .skills.container-fluid
-    .container
-      .row
-        .col-xs-12
-          #skills
-            .row
-              .col-sm-2
-              .col-sm-1
-                p.text-center Javascript
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=80, aria-valuemax='100', style='width: 80%')
+                .col-sm-1
+                  p.text-center Ruby
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=60, aria-valuemax='100', style='width: 60%')
+                .col-sm-2
 
-              .col-sm-1
-                p.text-center HTML
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=100, aria-valuemax='100', style='width: 100%')
-              .col-sm-2
+              .row
+                .col-sm-2
+                .col-sm-1
+                  p.text-center C
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=55, aria-valuemax='100', style='width: 55%')
 
-            .row
-              .col-sm-2
-              .col-sm-1
-                p.text-center CSS
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=80, aria-valuemax='100', style='width: 85%')
+                .col-sm-1
+                  p.text-center C#
+                .col-sm-3
+                  .progress
+                    .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=50, aria-valuemax='100', style='width: 50%')
+                .col-sm-2
 
-              .col-sm-1
-                p.text-center C++
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=60, aria-valuemax='100', style='width: 65%')
-              .col-sm-2
-
-            .row
-              .col-sm-2
-              .col-sm-1
-                p.text-center Java
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=65, aria-valuemax='100', style='width: 70%')
-
-              .col-sm-1
-                p.text-center Ruby
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=60, aria-valuemax='100', style='width: 60%')
-              .col-sm-2
-
-            .row
-              .col-sm-2
-              .col-sm-1
-                p.text-center C
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=55, aria-valuemax='100', style='width: 55%')
-
-              .col-sm-1
-                p.text-center C#
-              .col-sm-3
-                .progress
-                  .progress-bar(role='progressbar', aria-valuemin='0', aria-valuenow=50, aria-valuemax='100', style='width: 50%')
-              .col-sm-2
-
-  .contact.container-fluid
-    #contact.container
-      .row
-        .col-xs-12
-          h3 contact me
-          br
-      .row
-        .col-xs-12
-          form#contact-form(action='contact' method='post')
-            fieldset
-            .form-group
-              input#name.form-control(name='name', placeholder='Name')
-            .form-group
-              input#email.form-control(name='email', placeholder='Email')
-            .form-group
-              textarea#message.form-control(name='message', placeholder='Message', rows=5)
-            .form-group
-              button.btn.btn-lg(type='submit') Send
-
+    .contact.container-fluid
+      #contact.container
+        .row
+          .col-xs-12
+            h3 contact me
+            br
+        .row
+          .col-xs-12
+            form#contact-form(action='contact' method='post')
+              fieldset
+              .form-group
+                input#name.form-control(name='name', placeholder='Name')
+              .form-group
+                input#email.form-control(name='email', placeholder='Email')
+              .form-group
+                textarea#message.form-control(name='message', placeholder='Message', rows=5)
+              .form-group
+                button.btn.btn-primary.btn-block(type='submit') Send

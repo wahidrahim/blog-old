@@ -4,5 +4,6 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', controller.index);
+router.post('/contact', controller.contact);
 
 module.exports = router;
