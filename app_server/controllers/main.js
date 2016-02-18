@@ -13,11 +13,11 @@ var contact = function(req, res) {
     }
   });
 
-  var sig = '---\nname: ' + req.body.name + '\nemail: ' + req.body.email;
+  var sig = '\n---\nname: ' + req.body.name + '\nemail: ' + req.body.email;
 
   transporter.sendMail({
     to: 'wahidrahim@gmail.com',
-    subject: 'mail via wahidrahim.com',
+    subject: 'mail from \'' + req.body.name + '\' via wahidrahim.com',
     text: req.body.message + sig
   }, function(err, inf) {
     res.send(err);
