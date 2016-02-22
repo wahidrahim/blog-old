@@ -1,4 +1,3 @@
-var ARTICLES_DIR = '_articles';
 
 var path = require('path');
 var fs = require('fs');
@@ -7,6 +6,9 @@ var fm = require('front-matter');
 var articles = [];
 
 // Load articles on startup
+
+
+var ARTICLES_DIR = path.join(process.env.PWD, '_articles');
 
 fs.readdirSync(ARTICLES_DIR).forEach(function(file) {
   var article = fs.readFileSync(path.join(ARTICLES_DIR, file), 'utf8');
