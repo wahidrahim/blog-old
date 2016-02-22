@@ -1,0 +1,25 @@
+{
+  "name": "wahidrahim.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "front-matter": "^2.0.6",
+    "marked": "^0.3.5",
+    "moment": "^2.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahidrahim/wahidrahim.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahidrahim/wahidrahim.com/issues"
+  },
+  "homepage": "https://github.com/wahidrahim/wahidrahim.com#readme"
+}
