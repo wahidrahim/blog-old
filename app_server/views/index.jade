@@ -8,7 +8,7 @@ block content
           .banner-text-container
             .banner-text
               h1 Wahid Rahim
-              p developer | blogger | entrepreneur
+              span developer | blogger | entrepreneur
 
   #wrapper
     .portfolio.container-fluid
@@ -19,7 +19,10 @@ block content
               #portfolio
                 // BLACKBOARD
                 .item
-                  img.img-responsive(src='https://giant.gfycat.com/TerribleOptimalBlackbuck.gif')
+                  video.img-responsive
+                    source(src='https://zippy.gfycat.com/TerribleOptimalBlackbuck.webm', type='video/webm')
+                    source(src='https://zippy.gfycat.com/TerribleOptimalBlackbuck.mp4', type='video/mp4')
+                  //-img.img-responsive(src='https://giant.gfycat.com/TerribleOptimalBlackbuck.gif')
                   a(href='http://wahidrahim.com:3000/demo/blackboard', target='_blank')
                     h3 Blackboard
                   #stack
@@ -54,7 +57,10 @@ block content
 
                 // BREAKOUT-JS
                 .item
-                  img.img-responsive(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.gif')
+                  video.img-responsive
+                    source(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.mp4', type='video/mp4')
+                    source(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.webm', type='video/webm')
+                  //-img.img-responsive(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.gif')
                   a(href='https://goo.gl/Ef3CsR')
                     h3 breakout-js
                   #stack
@@ -66,7 +72,10 @@ block content
 
                 // CANDY-CRASH
                 .item
-                  img.img-responsive(src='http://i.imgur.com/ry1sXHy.gif')
+                  video.img-responsive
+                    source(src='https://fat.gfycat.com/GiftedWelldocumentedKingfisher.mp4', type='video/mp4')
+                    source(src='https://fat.gfycat.com/GiftedWelldocumentedKingfisher.webm', type='video/webm')
+                  //-img.img-responsive(src='http://i.imgur.com/ry1sXHy.gif')
                   h3 Candy-Crash
                   #stack
                     i C++, Bash, X-graphics
@@ -77,7 +86,10 @@ block content
 
                 // RESIZE-FONT
                 .item
-                  img.img-responsive(src='http://i.imgur.com/qsDPtsj.gif')
+                  video.img-responsive
+                    source(src='https://fat.gfycat.com/JealousBestEmperorpenguin.mp4', type='video/mp4')
+                    source(src='https://zippy.gfycat.com/JealousBestEmperorpenguin.webm', type'video/webm')
+                  //-img.img-responsive(src='http://i.imgur.com/qsDPtsj.gif')
                   h3 resize-font.vim
                   #stack
                     i VimL
@@ -86,7 +98,7 @@ block content
                   a(href='https://github.com/wahidrahim/resize-font.vim')
                     | https://github.com/wahidrahim/resize-font.vim
 
-    .skills.container-fluid
+    .skills.container-fluid#skills-top
       .container
         .row
           .col-xs-12
@@ -152,12 +164,9 @@ block content
                 .col-sm-2
 
     .contact.container-fluid
-      #contact.container
-        .row
-          .col-xs-12
-            h3 contact me
-            br
-        .row
+      .row
+        #contact.container
+          h3.text-center contact me
           .col-xs-12
             form#contact-form(role='form', data-toggle='validator', data-disable='false')
               fieldset
