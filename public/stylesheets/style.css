@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-top: 50px;
 }
 
@@ -98,10 +98,7 @@ nav {
   width: 500px;
   margin: 0 auto;
 }
-#contact-form input,
-#contact-form textarea {
-  font-family: monaco, monospace;
-}
+
 #contact-form button {
   background-color: #FF3D00;
   /*background-color: #FF4A37;*/
