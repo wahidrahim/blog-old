@@ -12,9 +12,8 @@ nav {
   margin-bottom: 0px;
   background-color: #000;
 }
-.navbar-header > a img {
-  border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+.navbar-header > a {
+  font-weight: bold;
 }
 
 .container-fluid {
@@ -24,7 +23,7 @@ nav {
 .banner {
   height: 100vh;
   width: 100%;
-  background: url(../images/banner.png) no-repeat center center fixed;
+  background: url(../images/banner3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,7 +51,7 @@ nav {
 
 .portfolio {
   color: #fff;
-  background-color: #353330;
+  background-color: #333;
   height: 500px;
   overflow: hidden;
   height: 1%;
@@ -75,6 +74,9 @@ nav {
 #portfolio .item #stack {
   color: #666;
 }
+.item h3 {
+  font-weight: bold;
+}
 
 .skills {
   background-color: #fff;
@@ -84,7 +86,7 @@ nav {
 }
 
 .contact {
-  background-color: #32bad5;
+  background-color: #2F9DDC;
   color: #fff;;
   padding-bottom: 20px;
   text-shadow: 1px 1px rgba(0,0,0,0.5);
@@ -101,7 +103,8 @@ nav {
   font-family: monaco, monospace;
 }
 #contact-form button {
-  background-color: #FF4A37;
+  background-color: #FF3D00;
+  /*background-color: #FF4A37;*/
 }
 #mail-success {
   width: 500px;
@@ -117,7 +120,7 @@ nav {
   box-shadow: 1px 1px rgba(0,0,0,0.3);
 }
 .progress .progress-bar {
-  background-color: #32bad5;
+  background-color: #2F9DDC;
 }
 
 #contact {
@@ -129,7 +132,8 @@ nav {
 
 footer {
   padding-bottom: 3px;
-  background-color: #0095B3;
+  background-color: #004C78;
+  color: #0070B0;
 }
 footer img {
   width: 16px;
