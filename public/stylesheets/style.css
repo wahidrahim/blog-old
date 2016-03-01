@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+
+body {
+  padding-top: 70px;
+  font-family: 'Roboto';
+}
+h3 {
+  font-weight: bold;
+}
+
+/*
+ * NAVBAR
+ */
+nav {
+  height: 75px;
+}
+.navbar {
+  background-color: #2C3E50;
+}
+.navbar-header .navbar-brand,
+.nav.navbar-nav li a {
+  color: #ECF0F1;
+}
+.navbar-brand {
+  font-size: 3em;
+  font-weight: 900;
+}
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 75px;
+  height: 75px;
+  padding-top: 0;
+}
+.navbar-toggle {
+  margin-top: 20px;
+}
+
+/*
+ * PORTFOLIO
+ */
+#portfolio-container {
+  background-color: #34495E;
+  padding: 50px;
+}
+#portfolio {
+  margin: 0 auto;
+}
+#portfolio .item {
+  width: 420px;
+  border-radius: 4px;
+  background-color: #EEE;
+  padding: 10px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#portfolio .item:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+#portfolio .item .stack {
+  color: #666;
+}
+
+/*
+ * SKILLS
+ */
+#skills-container {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+#skills .progress {
+  height: 40px;
+  margin-top: 10px;
+  box-shadow: 1px 1px rgba(1,1,1,0.5);
+}
+#skills .progress-bar {
+  background-color: #3498DB;
+  box-shadow: none;
+}
+#skills h3 {
+  text-align: center;
+}
+
+/*
+ * CONTACT
+ */
+#contact-container {
+  background-color: #3498DB;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+#contact h1 {
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 1px 1px rgba(1,1,1,0.5);
+}
+#contact {
+  width: 700px;
+  margin: 0 auto;
+}
+#contact input,
+#contact textarea,
+#contact #submit
+{
+  font-size: 2em;
+}
+#contact input {
+  height: 2em;
+}
+#contact #submit {
+  background-color: #FE4100;
+}
+
+#footer {
+  padding: 5px;
+  background-color: #3498DB;
+  border-top: 1px dotted rgba(1,1,1,0.5);
+}
+#footer img {
+  height: 20px;
+}
