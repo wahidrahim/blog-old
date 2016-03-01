@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+body {
+  padding: 50px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF3E7D;
+}
+
+#carpet {
+  margin: 0;
+}
+
+#wrapper,
+#disqus {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.article {
+  border-radius: 2px;
+  border-bottom-color: rgba(1,1,1,0.1);
+  padding: 10px;
+}
+.article h3 {
+  font-size: 2em;
+}
+
+.tags {
+  list-style-type: none;
+  margin-top: 5px;;
+  padding: 0;
+}
+.tag {
+  background-color: rgba(1,1,1,0.2);
+  display: inline;
+  margin-right: 5px;
+  padding: 2px 6px 2px 6px;
+}
+
+.title {
+  margin-bottom: 0px;
+}
+
+.body {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.body p {
+  text-align: justify;
+  text-justify: inner-word;
+}
+.body p code {
+  color: #880000;
+  background-color: rgba(255,0,0,0.1);
+  padding: 0 3px 0 3px;
+  border-radius: 5px;
+}
+
+code {
+  font-family: monaco, consolas, "lucida console", monospace;
+  font-size: 17px;
+}
+
+.hljs {
+  white-space: pre;
+  word-wrap: normal;
+}
+
+
+#fail, #fix {font-weight: bold;}
+#fail {color: red;}
+#fix {color: green;}
