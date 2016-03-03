@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,900);
 
 body {
   padding: 50px;
@@ -13,8 +13,14 @@ a:hover {
   color: #FF3E7D;
 }
 
-#carpet {
-  margin: 0;
+#home {
+  display: block;
+}
+#home a {
+  text-shadow: 1px 1px 1px #000;
+  font-size: 3em;
+  font-weight: 900;
+  display: inline-block;
 }
 
 #wrapper,

@@ -1,200 +1,229 @@
-extends layout
+doctype html
+html
+  head
+    meta(charset='utf8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
 
-block content
-  nav.navbar.navbar-inverse.navbar-fixed-top
-    .container
-      .navbar-header
-        button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-navbar-collapse-1', aria-expanded='false', type='button')
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand(href='/') Wahid Rahim
-      #bs-navbar-collapse-1.collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-right
-          li
-            a(href='#portfolio-top') portfolio
-          li
-            a(href='#skills-top') skills
-          li
-            a(href='#contact-top') contact
-          li
-            a(href='/blog') blog
+    title= title
 
-  #portfolio-top
-  #portfolio-container
-    #portfolio
-      // BLACKBOARD
-      .item
-        video.img-responsive(loop)
-          source(src='https://zippy.gfycat.com/TerribleOptimalBlackbuck.webm', type='video/webm')
-          source(src='https://zippy.gfycat.com/TerribleOptimalBlackbuck.mp4', type='video/mp4')
-        //-img.img-responsive(src='https://giant.gfycat.com/TerribleOptimalBlackbuck.gif')
-        a(href='http://wahidrahim.com:3000/demo/blackboard', target='_blank')
-          h3 Blackboard
-        .stack
-          i Node.js, Express.js, Socket.io, Fabric.js, CoffeeScript
-        .desc
-          | Real-time multi-user drawing application. Made simply, thanks to Socket.io and Fabric.js.
-        a(href='https://github.com/wahidrahim/blackboard' target='_blank')
-          | https://github.com/wahidrahim/blackboard
+    link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='bower_components/bootstrap-social/bootstrap-social.css')
+    link(rel='stylesheet', href='bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-navbar-collapse', aria-expanded='false', type='button')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Wahid Rahim
+        #bs-navbar-collapse.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#portfolio-top') portfolio
+            li
+              a(href='#skills-top') skills
+            li
+              a(href='#contact-top') contact
+            li
+              a(href='/blog') blog
 
-      // CARPET
-      .item
-        img.img-responsive(src='http://i.imgur.com/qq80zjW.png')
-        a(href='http://carpetblog.herokuapp.com/', target='_blank')
-          h3 Carpet
-        .stack
-          i Node.js, Express.js, Markdown
-        .desc
-          | A simple static blog engine. Built for extensibility and ease of use.
-        a(href='https://github.com/wahidrahim/carpet', target='_blank')
-          | https://github.com/wahidrahim/carpet
+    #portfolio-top
+    #portfolio-container
+      #portfolio
+        // BLACKBOARD
+        .item
+          video.img-responsive(loop)
+            source(src='https://zippy.gfycat.com/TerribleOptimalBlackbuck.webm', type='video/webm')
+            source(src='https://zippy.gfycat.com/TerribleOptimalBlackbuck.mp4', type='video/mp4')
+          //-img.img-responsive(src='https://giant.gfycat.com/TerribleOptimalBlackbuck.gif')
+          a(href='http://wahidrahim.com:3000/demo/blackboard', target='_blank')
+            h3 Blackboard
+          .stack
+            i Node.js, Express.js, Socket.io, Fabric.js, CoffeeScript
+          .desc
+            | Real-time multi-user drawing application. Made simply, thanks to Socket.io and Fabric.js.
+          a(href='https://github.com/wahidrahim/blackboard' target='_blank')
+            | https://github.com/wahidrahim/blackboard
 
-      // CANDY-CRASH
-      .item
-        video.img-responsive(loop)
-          source(src='https://fat.gfycat.com/GiftedWelldocumentedKingfisher.mp4', type='video/mp4')
-          source(src='https://fat.gfycat.com/GiftedWelldocumentedKingfisher.webm', type='video/webm')
-        //-img.img-responsive(src='http://i.imgur.com/ry1sXHy.gif')
-        h3 Candy-Crash
-        .stack
-          i C++, Bash, X-graphics
-        .desc
-          | A match-3 type of game, written in C++, in collaboration with Larry Li.
-        a(href='https://github.com/wahidrahim/Candy-Crash', target='_blank')
-          | https://github.com/wahidrahim/Candy-Crash
+        // CARPET
+        .item
+          img.img-responsive(src='http://i.imgur.com/qq80zjW.png')
+          a(href='http://carpetblog.herokuapp.com/', target='_blank')
+            h3 Carpet
+          .stack
+            i Node.js, Express.js, Markdown
+          .desc
+            | A simple static blog engine. Built for extensibility and ease of use.
+          a(href='https://github.com/wahidrahim/carpet', target='_blank')
+            | https://github.com/wahidrahim/carpet
 
-      // MEAN-TODO-APP
-      .item
-        img.img-responsive(src='http://i.imgur.com/uHPveze.jpg')
-        h3 mean-todo-app
-        .stack
-          i MongoDB, Express.js, Angular.js, Node.js
-        .desc
-          | The 'Hello World' of CRUD apps.
-        a(href='https://github.com/wahidrahim/mean-todo-app', target='_blank')
-          | https://github.com/wahidrahim/mean-todo-app
+        // CANDY-CRASH
+        .item
+          video.img-responsive(loop)
+            source(src='https://fat.gfycat.com/GiftedWelldocumentedKingfisher.mp4', type='video/mp4')
+            source(src='https://fat.gfycat.com/GiftedWelldocumentedKingfisher.webm', type='video/webm')
+          //-img.img-responsive(src='http://i.imgur.com/ry1sXHy.gif')
+          h3 Candy-Crash
+          .stack
+            i C++, Bash, X-graphics
+          .desc
+            | A match-3 type of game, written in C++, in collaboration with Larry Li.
+          a(href='https://github.com/wahidrahim/Candy-Crash', target='_blank')
+            | https://github.com/wahidrahim/Candy-Crash
 
-      // BLOGGER
-      .item
-        img.img-responsive(src='http://i.imgur.com/dgkoQjO.png')
-        a(href='http://bloggerails.herokuapp.com/')
-          h3 blogger
-        .stack
-          i Ruby on Rails
-        .desc
-          | Blogging app, including authentication and commenting
-        a(href='https://github.com/wahidrahim/blogger', target='_blank')
-          | https://github.com/wahidrahim/blogger
+        // MEAN-TODO-APP
+        .item
+          img.img-responsive(src='http://i.imgur.com/uHPveze.jpg')
+          h3 mean-todo-app
+          .stack
+            i MongoDB, Express.js, Angular.js, Node.js
+          .desc
+            | The 'Hello World' of CRUD apps.
+          a(href='https://github.com/wahidrahim/mean-todo-app', target='_blank')
+            | https://github.com/wahidrahim/mean-todo-app
+
+        // BLOGGER
+        .item
+          img.img-responsive(src='http://i.imgur.com/dgkoQjO.png')
+          a(href='http://bloggerails.herokuapp.com/')
+            h3 blogger
+          .stack
+            i Ruby on Rails
+          .desc
+            | Blogging app, including authentication and commenting
+          a(href='https://github.com/wahidrahim/blogger', target='_blank')
+            | https://github.com/wahidrahim/blogger
 
 
-      // BREAKOUT-JS
-      .item
-        video.img-responsive(loop)
-          source(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.mp4', type='video/mp4')
-          source(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.webm', type='video/webm')
-        //-img.img-responsive(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.gif')
-        a(href='http://breakout-arcade.herokuapp.com/', target='_blank')
-          h3 breakout-arcade
-        .stack
-          i JavaScript, HTML, CSS
-        .desc
-          | The classic game in pure Object Oriented JavaScript.
-        a(href='https://github.com/wahidrahim/breakout-arcade', target='_blank')
-          | https://github.com/wahidrahim/breakout-arcade
+        // BREAKOUT-JS
+        .item
+          video.img-responsive(loop)
+            source(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.mp4', type='video/mp4')
+            source(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.webm', type='video/webm')
+          //-img.img-responsive(src='https://zippy.gfycat.com/BeautifulLoathsomeDragon.gif')
+          a(href='http://breakout-arcade.herokuapp.com/', target='_blank')
+            h3 breakout-arcade
+          .stack
+            i JavaScript, HTML, CSS
+          .desc
+            | The classic game in pure Object Oriented JavaScript.
+          a(href='https://github.com/wahidrahim/breakout-arcade', target='_blank')
+            | https://github.com/wahidrahim/breakout-arcade
 
-      // RESIZE-FONT
-      .item
-        video.img-responsive(loop)
-          source(src='https://fat.gfycat.com/JealousBestEmperorpenguin.mp4', type='video/mp4')
-          source(src='https://zippy.gfycat.com/JealousBestEmperorpenguin.webm', type'video/webm')
-        //-img.img-responsive(src='http://i.imgur.com/qsDPtsj.gif')
-        h3 resize-font.vim
-        .stack
-          i VimL
-        .desc
-          | A tiny script for making fonts bigger/smaller in gVim.
-        a(href='https://github.com/wahidrahim/resize-font.vim', target='_blank')
-          | https://github.com/wahidrahim/resize-font.vim
+        // RESIZE-FONT
+        .item
+          video.img-responsive(loop)
+            source(src='https://fat.gfycat.com/JealousBestEmperorpenguin.mp4', type='video/mp4')
+            source(src='https://zippy.gfycat.com/JealousBestEmperorpenguin.webm', type'video/webm')
+          //-img.img-responsive(src='http://i.imgur.com/qsDPtsj.gif')
+          h3 resize-font.vim
+          .stack
+            i VimL
+          .desc
+            | A tiny script for making fonts bigger/smaller in gVim.
+          a(href='https://github.com/wahidrahim/resize-font.vim', target='_blank')
+            | https://github.com/wahidrahim/resize-font.vim
 
-  #skills-top
-  #skills-container.container
-    - var skills_js = 80
-    - var skills_html = 100
-    - var skills_css = 90
-    - var skills_cpp = 65
-    - var skills_java = 70
-    - var skills_c = 60
-    - var skills_csharp = 50
-    - var skills_ruby = 55
+    #skills-top
+    #skills-container.container
+      - var skills_js = 80
+      - var skills_html = 100
+      - var skills_css = 90
+      - var skills_cpp = 65
+      - var skills_java = 70
+      - var skills_c = 60
+      - var skills_csharp = 50
+      - var skills_ruby = 55
 
-    #skills
-      .col-xs-12.col-sm-2
-        h3 JavaScript
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_js}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_js}%')
-      .col-xs-12.col-sm-2
-        h3 HTML
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_html}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_html}%')
-      .col-xs-12.col-sm-2
-        h3 CSS
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_css}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_css}%')
-      .col-xs-12.col-sm-2
-        h3 C++
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_cpp}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_cpp}%')
-      .col-xs-12.col-sm-2
-        h3 Java
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_java}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_java}%')
-      .col-xs-12.col-sm-2
-        h3 C
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_c}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_c}%')
-      .col-xs-12.col-sm-2
-        h3 Ruby
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_ruby}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_ruby}%')
-      .col-xs-12.col-sm-2
-        h3 C#
-      .col-xs-12.col-sm-4
-        .progress
-          .progress-bar(rol='progressbar', aria-valuenow='#{skills_csharp}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_csharp}%')
+      #skills
+        .col-xs-12.col-sm-2
+          h3 JavaScript
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_js}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_js}%')
+        .col-xs-12.col-sm-2
+          h3 HTML
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_html}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_html}%')
+        .col-xs-12.col-sm-2
+          h3 CSS
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_css}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_css}%')
+        .col-xs-12.col-sm-2
+          h3 C++
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_cpp}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_cpp}%')
+        .col-xs-12.col-sm-2
+          h3 Java
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_java}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_java}%')
+        .col-xs-12.col-sm-2
+          h3 C
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_c}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_c}%')
+        .col-xs-12.col-sm-2
+          h3 Ruby
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_ruby}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_ruby}%')
+        .col-xs-12.col-sm-2
+          h3 C#
+        .col-xs-12.col-sm-4
+          .progress
+            .progress-bar(rol='progressbar', aria-valuenow='#{skills_csharp}', aria-valuemin='0', aria-valuemax='100', style='width: #{skills_csharp}%')
 
-  #contact-top
-  #contact-container
-    .container
-      #contact
-        h1.text-center Contact me
-        .col-xs-12
-          form#contact-form(role='form', data-toggle='validator', data-disable='false')
-            fieldset
-            .form-group
-              input#name.form-control(placeholder='Name', required)
-              .help-block.with-errors
-            .form-group
-              input#email.form-control(type='email', placeholder='Email', data-error='invalid email', required)
-              .help-block.with-errors
-            .form-group
-              textarea#message.form-control(placeholder='Message', rows=5, required)
-              .help-block.with-errors
-            .form-group
-              button#submit.btn.btn-primary.btn-block(type='submit') Send
+    #contact-top
+    #contact-container
+      .container
+        #contact
+          h1.text-center Contact me
+          .col-xs-12
+            form#contact-form(role='form', data-toggle='validator', data-disable='false')
+              fieldset
+              .form-group
+                input#name.form-control(placeholder='Name', required)
+                .help-block.with-errors
+              .form-group
+                input#email.form-control(type='email', placeholder='Email', data-error='invalid email', required)
+                .help-block.with-errors
+              .form-group
+                textarea#message.form-control(placeholder='Message', rows=5, required)
+                .help-block.with-errors
+              .form-group
+                button#submit.btn.btn-primary.btn-block(type='submit') Send
 
-  #footer
-    .container
-      .col-xs-3.tex-left
-        small #[img(src='/images/nodejs.png')]
-      .col-xs-9.text-right
-        small &copy; Wahid Rahim 2016
+    #footer
+      .container
+        .col-xs-3.tex-left
+          small#copyright &copy; Wahid Rahim 2016
+        .col-xs-6.text-center
+          a.btn.btn-social-icon.btn-github(href='https://github.com/wahidrahim', target='_blank')
+            span.fa.fa-github
+          a.btn.btn-social-icon.btn-linkedin(href='https://www.linkedin.com/in/wahidrahim', target='_blank')
+            span.fa.fa-linkedin
+          a.btn.btn-social-icon.btn-twitter(href='https://twitter.com/wahidrahim', target='_blank')
+            span.fa.fa-twitter
+          a.btn.btn-social-icon.btn-google(href='https://plus.google.com/109773447598846574822', target='_blank')
+            span.fa.fa-google
+          a.btn.btn-social-icon.btn-github(href='http://steamcommunity.com/id/wrahim', target='_blank')
+            span.fa.fa-steam
+        .col-xs-3.text-right
+          small #[img(src='/images/nodejs.png')]
 
+    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+    script(src='bower_components/imagesloaded/imagesloaded.pkgd.min.js')
+    script(src='bower_components/masonry/dist/masonry.pkgd.min.js')
+    script(src='bower_components/bootstrap-validator/dist/validator.min.js')
+    script(src='bower_components/df-visible/jquery.visible.min.js')
+    script(src='/javascripts/scripts.js')

@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
 
 body {
-  padding-top: 70px;
+  padding-top: 75px;
   font-family: 'Roboto';
 }
 h3 {
@@ -40,7 +40,8 @@ nav {
  */
 #portfolio-container {
   background-color: #34495E;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 #portfolio {
   margin: 0 auto;
@@ -54,9 +55,6 @@ nav {
   margin-bottom: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-#portfolio .item:hover {
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
 #portfolio .item .stack {
   color: #666;
 }
@@ -65,8 +63,8 @@ nav {
  * SKILLS
  */
 #skills-container {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 #skills .progress {
   height: 40px;
@@ -118,10 +116,18 @@ nav {
 }
 
 #footer {
-  padding: 5px;
-  background-color: #3498DB;
-  border-top: 1px dotted rgba(1,1,1,0.5);
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #E4F1FE;
+  /*border-top: 1px dotted rgba(1,1,1,0.5);*/
 }
 #footer img {
-  height: 20px;
+  height: 34px;
+}
+#footer a {
+  margin: 0 5px 0 5px;
+}
+#footer #copyright {
+  vertical-align: middle;
 }
