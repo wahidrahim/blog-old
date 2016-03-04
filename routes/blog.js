@@ -23,7 +23,7 @@ router.get('/article/:url', function(req, res) {
   var article = getArticleByUrl(req.params.url);
 
   if (article) {
-    res.render('article', {
+    res.render('blog', {
       title: article.title,
       date: moment(new Date(article.date)).format('MMM Do, YYYY'),
       body: marked(article.body)

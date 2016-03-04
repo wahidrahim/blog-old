@@ -1,21 +1,29 @@
 doctype html
-html
+html(lang='en')
   head
     meta(charset='utf8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
     title= title
 
-    link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
-    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900', rel='stylesheet', type='text/css')
+
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bower_components/bootstrap-social/bootstrap-social.css')
+    link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+
   body
+    include extras/google-tag-man.html
+
     block content
 
-    script(src='bower_components/jquery/dist/jquery.min.js')
-    script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
-    script(src='bower_components/imagesloaded/imagesloaded.pkgd.min.js')
-    script(src='bower_components/masonry/dist/masonry.pkgd.min.js')
-    script(src='bower_components/bootstrap-validator/dist/validator.min.js')
-    script(src='bower_components/df-visible/jquery.visible.min.js')
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js')
+    script(src='/bower_components/masonry/dist/masonry.pkgd.min.js')
+    script(src='/bower_components/bootstrap-validator/dist/validator.min.js')
+    script(src='/bower_components/df-visible/jquery.visible.min.js')
     script(src='/javascripts/scripts.js')
+    script(src='/javascripts/contact.js')

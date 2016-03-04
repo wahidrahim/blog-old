@@ -1,0 +1,14 @@
+#contact.container
+  h3.text-center Contact me
+  form#contact-form(role='form', data-toggle='validator', data-disable='false')
+    .form-group
+      input#name.form-control(placeholder='Name', required)
+      .help-block.with-errors
+    .form-group
+      input#email.form-control(type='email', placeholder='Email', data-error='invalid email', required)
+      .help-block.with-errors
+    .form-group
+      textarea#message.form-control(placeholder='Message', rows=5, required)
+      .help-block.with-errors
+    .form-group
+      button#submit.btn.btn-primary.btn-block(type='submit') Send

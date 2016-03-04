@@ -1,0 +1,136 @@
+body {
+  font-family: 'Roboto';
+  padding-top: 75px;
+}
+
+.navbar {
+  background-color: #2C3E50;
+}
+.navbar-header .navbar-brand,
+.nav.navbar-nav li a {
+  color: #ECF0F1;
+}
+.navbar-brand {
+  font-size: 3em;
+  font-weight: 900;
+  text-shadow: 1px 1px #000;
+}
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 75px;
+  height: 75px;
+  padding-top: 0;
+}
+
+#skills-top,
+#portfolio-top,
+#contact-top {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}
+
+#portfolio-container {
+  background-color: #34495E;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+#portfolio {
+  margin: 0 auto;
+}
+#portfolio .item {
+  width: 360px;
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 2px;
+  font-size: 1.2em;
+}
+#portfolio .item h3 {
+  font-weight: 700;
+}
+#portfolio .item .source {
+  word-wrap: break-word;
+}
+#portfolio .item .stack {
+  color: #666;
+}
+
+#skills-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#skills .progress {
+  height: 35px;
+  margin-top: 15px;
+  box-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+#skills .progress-bar {
+  background-color: #3498DB;
+  box-shadow: none;
+}
+
+#contact-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #3498DB;
+}
+#contact h3 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #FFF;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+#contact form #submit {
+  background-color: #FE4100;
+  text-shadow: 0px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px rgba(0,0,0,0.5);
+}
+#contact form #submit:active {
+  text-shadow: 0px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px -1px rgba(0,0,0,0.5);
+}
+#contact form input,
+#contact form textarea, 
+#contact form #submit {
+  font-size: 2em;
+}
+#contact form input {
+  height: 2em;
+}
+
+#footer {
+  padding: 5px;
+  background-color: #E4F1FE;
+}
+#footer span#copy {
+  line-height: 34px;
+}
+#footer .btn-social-icon {
+  margin: 0 2px 0 2px;
+}
+#footer img.powered {
+  max-height: 34px;
+}
+
+@media only screen and (min-width: 768px) {
+  #skills h3 {
+    text-align: center;
+  }
+
+  #contact {
+    max-width: 700px;
+  }
+
+  #portfolio .item {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #portfolio .item {
+    width: 320px;
+  }
+}

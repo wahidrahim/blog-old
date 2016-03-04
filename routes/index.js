@@ -4,7 +4,10 @@ var mailer = require('nodemailer');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Wahid Rahim' });
+  res.render('index', {
+    title: 'Wahid Rahim',
+    page: 'main'
+  });
 });
 
 router.post('/contact', function(req, res) {

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,900);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,900);*/
 
 body {
   padding: 50px;
@@ -17,7 +17,6 @@ a:hover {
   display: block;
 }
 #home a {
-  text-shadow: 1px 1px 1px #000;
   font-size: 3em;
   font-weight: 900;
   display: inline-block;
@@ -31,20 +30,19 @@ a:hover {
 
 .article {
   border-radius: 2px;
-  border-bottom-color: rgba(1,1,1,0.1);
+  border-bottom-color: rgba(0,0,0,1.0);
   padding: 10px;
 }
-.article h3 {
+.article .title {
   font-size: 2em;
 }
-
-.tags {
+.article .tags {
   list-style-type: none;
-  margin-top: 5px;;
+  margin-top: 10px;;
   padding: 0;
 }
-.tag {
-  background-color: rgba(1,1,1,0.2);
+.article .tags .tag {
+  background-color: rgba(0,0,0,0.2);
   display: inline;
   margin-right: 5px;
   padding: 2px 6px 2px 6px;
@@ -56,30 +54,13 @@ a:hover {
 
 .body {
   margin-top: 50px;
-  font-size: 20px;
-  font-weight: lighter;
-}
-.body p {
-  text-align: justify;
-  text-justify: inner-word;
-}
-.body p code {
-  color: #880000;
-  background-color: rgba(255,0,0,0.1);
-  padding: 0 3px 0 3px;
-  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 code {
-  font-family: monaco, consolas, "lucida console", monospace;
-  font-size: 17px;
+  font-family: 'roboto mono', monospace;
 }
-
-.hljs {
-  white-space: pre;
-  word-wrap: normal;
-}
-
 
 #fail, #fix {font-weight: bold;}
 #fail {color: red;}

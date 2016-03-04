@@ -2,17 +2,40 @@ doctype html
 html
   head
     link(rel='stylesheet', href='/stylesheets/blog.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,700,900', rel='stylesheet', type='text/css')
+
+    if title
+      link(href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,700' rel='stylesheet' type='text/css')
+      link(rel='stylesheet', href='/bower_components/highlightjs/styles/github.css')
   body
+    include extras/google-tag-man.html
+
     #home
       a(href='/') WR
     #wrapper
       if articles
+        // link to all articles
         each article in articles
           .article
-            a(href='/blog/article/' + article.url)
+            a(href='blog/article/' + article.url)
               h3.title= article.title
             span.date= article.date
             if article.tags
               ul.tags
                 each tag in article.tags
                   li.tag= tag
+
+      else if title
+        // render single article
+        a(href='/blog') back to articles
+
+        h1.title= title
+        span= date
+        .body!= body
+
+        #disqus
+          include extras/disqus.html
+
+        script(src='/bower_components/highlightjs/highlight.pack.min.js')
+        script.
+          hljs.initHighlightingOnLoad()
