@@ -59,7 +59,7 @@ a:hover {
 }
 
 code {
-  font-family: 'roboto mono', monospace;
+  font: 0.8em monaco;
 }
 
 #fail, #fix {font-weight: bold;}
