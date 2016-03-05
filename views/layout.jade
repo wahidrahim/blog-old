@@ -15,8 +15,6 @@ html(lang='en')
     link(rel='stylesheet', href='/stylesheets/styles.css')
 
   body
-    //-include extras/google-tag-man.html
-
     block content
 
     script(src='/bower_components/jquery/dist/jquery.min.js')
@@ -27,3 +25,5 @@ html(lang='en')
     script(src='/bower_components/df-visible/jquery.visible.min.js')
     script(src='/javascripts/scripts.js')
     script(src='/javascripts/contact.js')
+
+    include extras/google-analytics.html
