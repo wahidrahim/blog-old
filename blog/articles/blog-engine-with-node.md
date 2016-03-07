@@ -7,7 +7,7 @@ tags:
   - express
   - javascript
   - tutorial
-publish: false
+publish: true
 ---
 
 In this tutorial we are going to build a simple blog engine with the following specifications
