@@ -13,8 +13,8 @@ publish: true
 Right now I am in the process of completing
 <a  href="http://www.amazon.com/gp/product/1617292036/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1617292036&linkCode=as2&tag=wahidsblog-20&linkId=7L2BB6YKPFE4FGVG">Getting MEAN with Mongo, Express, Angular, and Node</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=wahidsblog-20&l=as2&o=1&a=1617292036" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 .
-In chapter 5, it goes over the monitoring database connections using mongoose
-connection events, and process signals; this allows gracefully closing the
+In chapter 5, it goes over monitoring database connections using mongoose
+connection events, and node process signals; this allows gracefully closing the
 database connection when the app closes/restarts.
 
 <br>
