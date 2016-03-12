@@ -96,6 +96,7 @@ body {
 #contact form textarea, 
 #contact form #submit {
   font-size: 2em;
+  max-width: 100%;
 }
 #contact form input {
   height: 2em;
