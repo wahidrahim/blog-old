@@ -57,7 +57,7 @@ a:hover {
 }
 
 code {
-  font-family: 'roboto mono';
+  font-family: 'roboto mono', 'monaco', 'consolas', monospace;
 }
 
 .body p {
