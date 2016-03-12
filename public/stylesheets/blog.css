@@ -15,7 +15,7 @@ a:hover {
   display: block;
 }
 #home a {
-  font-size: 3em;
+  font-size: 64px;
   font-weight: 900;
   display: inline-block;
 }
@@ -32,7 +32,7 @@ a:hover {
   padding: 10px;
 }
 .article .title {
-  font-size: 2em;
+  font-size: 48px;
 }
 .article .tags {
   list-style-type: none;
@@ -52,7 +52,7 @@ a:hover {
 
 .body {
   margin-top: 50px;
-  font-size: 1.5em;
+  font-size: 24px;
   line-height: 1.5;
 }
 
